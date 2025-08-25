@@ -14,7 +14,7 @@ pipeline{
         }
         stage('test'){
             steps{
-                sh 'npx cupress run'
+                sh 'npx cypress run'
             }
         }
     }
