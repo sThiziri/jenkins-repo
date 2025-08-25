@@ -7,9 +7,14 @@ pipeline{
     }
 
     stages{
-        stage('Hey'){
+        stage('installer dependances'){
             steps{
-                echo 'Hello from jenkinsfile'
+                sh 'npm ci'
+            }
+        }
+        stage('test'){
+            steps{
+                sh 'npx cupress run'
             }
         }
     }
