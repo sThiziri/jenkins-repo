@@ -1,8 +1,12 @@
 pipeline{
-    agent any
+    agent{
+        docker{
+            image "cypress/browsers:latest"
+        }
+    }
 
     stages{
-        stage(''){
+        stage('Hey'){
             steps{
                 echo 'Hello from jenkinsfile'
             }
