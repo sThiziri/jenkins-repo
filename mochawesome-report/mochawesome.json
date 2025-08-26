@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-25T18:01:12.020Z",
+    "end": "2025-08-25T18:01:26.324Z",
+    "duration": 14304,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8a75655e-951f-4225-b7e8-892b33f2c4b6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login\\login.cy.js",
+      "file": "cypress\\e2e\\login\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ed7805da-b48a-4934-8f46-968d4750b10b",
+          "title": "Login feature test with pom",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login avec username correct et pass correct",
+              "fullTitle": "Login feature test with pom Login avec username correct et pass correct",
+              "timedOut": null,
+              "duration": 6046,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\login.cy.js\\\\login-success.png\"\n    ]\n  ]\n}",
+              "code": "_loginPage.default.saisirUsername(\"standard_user\");\n_loginPage.default.saisirPassword(\"secret_sauce\");\n_loginPage.default.cliqueButton();\n_loginPage.default.accederDashboard();\ncy.screenshot(\"login-success\");",
+              "err": {},
+              "uuid": "a7b5646e-6451-4159-be7c-04c9bda21cf5",
+              "parentUUID": "ed7805da-b48a-4934-8f46-968d4750b10b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login avec username incorrect et pass correct",
+              "fullTitle": "Login feature test with pom Login avec username incorrect et pass correct",
+              "timedOut": null,
+              "duration": 2114,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\login.cy.js\\\\login-unsuccess-incorrect-username.png\"\n    ]\n  ]\n}",
+              "code": "_loginPage.default.saisirUsername(\"incorrect_user\");\n_loginPage.default.saisirPassword(\"secret_sauce\");\n_loginPage.default.cliqueButton();\n_loginPage.default.genererErreur();\ncy.screenshot(\"login-unsuccess-incorrect-username\");",
+              "err": {},
+              "uuid": "45582f67-045e-49be-bdfc-fa9845df7e8c",
+              "parentUUID": "ed7805da-b48a-4934-8f46-968d4750b10b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login avec username correct et pass incorrect",
+              "fullTitle": "Login feature test with pom Login avec username correct et pass incorrect",
+              "timedOut": null,
+              "duration": 1778,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\login.cy.js\\\\login-unsuccess-incorrect-password.png\"\n    ]\n  ]\n}",
+              "code": "_loginPage.default.saisirUsername(\"standard_user\");\n_loginPage.default.saisirPassword(\"incorrect_password\");\n_loginPage.default.cliqueButton();\n_loginPage.default.genererErreur();\ncy.screenshot(\"login-unsuccess-incorrect-password\");",
+              "err": {},
+              "uuid": "a2c6a826-d7a2-441d-9bde-e0d57868ce90",
+              "parentUUID": "ed7805da-b48a-4934-8f46-968d4750b10b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a7b5646e-6451-4159-be7c-04c9bda21cf5",
+            "45582f67-045e-49be-bdfc-fa9845df7e8c",
+            "a2c6a826-d7a2-441d-9bde-e0d57868ce90"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9938,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
